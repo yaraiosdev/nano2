@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C77912829669164001FE410 /* sentmintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912729669164001FE410 /* sentmintApp.swift */; };
+		5C77912A29669164001FE410 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912929669164001FE410 /* ContentView.swift */; };
+		5C77912C29669165001FE410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C77912B29669165001FE410 /* Assets.xcassets */; };
+		5C77912F29669165001FE410 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C77912E29669165001FE410 /* Preview Assets.xcassets */; };
+		5C77913929669165001FE410 /* sentmintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77913829669165001FE410 /* sentmintTests.swift */; };
+		5C77914329669165001FE410 /* sentmintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77914229669165001FE410 /* sentmintUITests.swift */; };
+		5C77914529669165001FE410 /* sentmintUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77914429669165001FE410 /* sentmintUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C77913529669165001FE410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C77911C29669164001FE410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C77912329669164001FE410;
+			remoteInfo = sentmint;
+		};
+		5C77913F29669165001FE410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C77911C29669164001FE410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C77912329669164001FE410;
+			remoteInfo = sentmint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C77912429669164001FE410 /* sentmint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sentmint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C77912729669164001FE410 /* sentmintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintApp.swift; sourceTree = "<group>"; };
+		5C77912929669164001FE410 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C77912B29669165001FE410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C77912E29669165001FE410 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C77913429669165001FE410 /* sentmintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sentmintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C77913829669165001FE410 /* sentmintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintTests.swift; sourceTree = "<group>"; };
+		5C77913E29669165001FE410 /* sentmintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sentmintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C77914229669165001FE410 /* sentmintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintUITests.swift; sourceTree = "<group>"; };
+		5C77914429669165001FE410 /* sentmintUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C77912129669164001FE410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C77913129669165001FE410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C77913B29669165001FE410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C77911B29669164001FE410 = {
+			isa = PBXGroup;
+			children = (
+				5C77912629669164001FE410 /* sentmint */,
+				5C77913729669165001FE410 /* sentmintTests */,
+				5C77914129669165001FE410 /* sentmintUITests */,
+				5C77912529669164001FE410 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C77912529669164001FE410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C77912429669164001FE410 /* sentmint.app */,
+				5C77913429669165001FE410 /* sentmintTests.xctest */,
+				5C77913E29669165001FE410 /* sentmintUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C77912629669164001FE410 /* sentmint */ = {
+			isa = PBXGroup;
+			children = (
+				5C77912729669164001FE410 /* sentmintApp.swift */,
+				5C77912929669164001FE410 /* ContentView.swift */,
+				5C77912B29669165001FE410 /* Assets.xcassets */,
+				5C77912D29669165001FE410 /* Preview Content */,
+			);
+			path = sentmint;
+			sourceTree = "<group>";
+		};
+		5C77912D29669165001FE410 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5C77912E29669165001FE410 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C77913729669165001FE410 /* sentmintTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C77913829669165001FE410 /* sentmintTests.swift */,
+			);
+			path = sentmintTests;
+			sourceTree = "<group>";
+		};
+		5C77914129669165001FE410 /* sentmintUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C77914229669165001FE410 /* sentmintUITests.swift */,
+				5C77914429669165001FE410 /* sentmintUITestsLaunchTests.swift */,
+			);
+			path = sentmintUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C77912329669164001FE410 /* sentmint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C77914829669165001FE410 /* Build configuration list for PBXNativeTarget "sentmint" */;
+			buildPhases = (
+				5C77912029669164001FE410 /* Sources */,
+				5C77912129669164001FE410 /* Frameworks */,
+				5C77912229669164001FE410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sentmint;
+			productName = sentmint;
+			productReference = 5C77912429669164001FE410 /* sentmint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C77913329669165001FE410 /* sentmintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C77914B29669165001FE410 /* Build configuration list for PBXNativeTarget "sentmintTests" */;
+			buildPhases = (
+				5C77913029669165001FE410 /* Sources */,
+				5C77913129669165001FE410 /* Frameworks */,
+				5C77913229669165001FE410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C77913629669165001FE410 /* PBXTargetDependency */,
+			);
+			name = sentmintTests;
+			productName = sentmintTests;
+			productReference = 5C77913429669165001FE410 /* sentmintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C77913D29669165001FE410 /* sentmintUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C77914E29669165001FE410 /* Build configuration list for PBXNativeTarget "sentmintUITests" */;
+			buildPhases = (
+				5C77913A29669165001FE410 /* Sources */,
+				5C77913B29669165001FE410 /* Frameworks */,
+				5C77913C29669165001FE410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C77914029669165001FE410 /* PBXTargetDependency */,
+			);
+			name = sentmintUITests;
+			productName = sentmintUITests;
+			productReference = 5C77913E29669165001FE410 /* sentmintUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C77911C29669164001FE410 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					5C77912329669164001FE410 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					5C77913329669165001FE410 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 5C77912329669164001FE410;
+					};
+					5C77913D29669165001FE410 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 5C77912329669164001FE410;
+					};
+				};
+			};
+			buildConfigurationList = 5C77911F29669164001FE410 /* Build configuration list for PBXProject "sentmint" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C77911B29669164001FE410;
+			productRefGroup = 5C77912529669164001FE410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C77912329669164001FE410 /* sentmint */,
+				5C77913329669165001FE410 /* sentmintTests */,
+				5C77913D29669165001FE410 /* sentmintUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C77912229669164001FE410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C77912F29669165001FE410 /* Preview Assets.xcassets in Resources */,
+				5C77912C29669165001FE410 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C77913229669165001FE410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C77913C29669165001FE410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C77912029669164001FE410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C77912A29669164001FE410 /* ContentView.swift in Sources */,
+				5C77912829669164001FE410 /* sentmintApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C77913029669165001FE410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C77913929669165001FE410 /* sentmintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C77913A29669165001FE410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C77914529669165001FE410 /* sentmintUITestsLaunchTests.swift in Sources */,
+				5C77914329669165001FE410 /* sentmintUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C77913629669165001FE410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C77912329669164001FE410 /* sentmint */;
+			targetProxy = 5C77913529669165001FE410 /* PBXContainerItemProxy */;
+		};
+		5C77914029669165001FE410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C77912329669164001FE410 /* sentmint */;
+			targetProxy = 5C77913F29669165001FE410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C77914629669165001FE410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C77914729669165001FE410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C77914929669165001FE410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sentmint/Preview Content\"";
+				DEVELOPMENT_TEAM = 8UFYNK5VRT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test120.sentmint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C77914A29669165001FE410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sentmint/Preview Content\"";
+				DEVELOPMENT_TEAM = 8UFYNK5VRT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test120.sentmint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C77914C29669165001FE410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UFYNK5VRT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test120.sentmintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sentmint.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sentmint";
+			};
+			name = Debug;
+		};
+		5C77914D29669165001FE410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UFYNK5VRT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test120.sentmintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sentmint.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sentmint";
+			};
+			name = Release;
+		};
+		5C77914F29669165001FE410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UFYNK5VRT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test120.sentmintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sentmint;
+			};
+			name = Debug;
+		};
+		5C77915029669165001FE410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8UFYNK5VRT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test120.sentmintUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sentmint;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C77911F29669164001FE410 /* Build configuration list for PBXProject "sentmint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C77914629669165001FE410 /* Debug */,
+				5C77914729669165001FE410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C77914829669165001FE410 /* Build configuration list for PBXNativeTarget "sentmint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C77914929669165001FE410 /* Debug */,
+				5C77914A29669165001FE410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C77914B29669165001FE410 /* Build configuration list for PBXNativeTarget "sentmintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C77914C29669165001FE410 /* Debug */,
+				5C77914D29669165001FE410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C77914E29669165001FE410 /* Build configuration list for PBXNativeTarget "sentmintUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C77914F29669165001FE410 /* Debug */,
+				5C77915029669165001FE410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C77911C29669164001FE410 /* Project object */;
+}

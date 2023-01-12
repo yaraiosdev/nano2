@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C09261E296D9D390047D75A /* logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09261D296D9D390047D75A /* logo.swift */; };
+		5C092621296EFD290047D75A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C779157296C3130001FE410 /* Localizable.strings */; };
+		5C092623296F2ABB0047D75A /* sentimentscor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C092622296F2ABB0047D75A /* sentimentscor.swift */; };
 		5C77912829669164001FE410 /* sentmintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912729669164001FE410 /* sentmintApp.swift */; };
 		5C77912A29669164001FE410 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912929669164001FE410 /* ContentView.swift */; };
 		5C77912C29669165001FE410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C77912B29669165001FE410 /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 		5C77913929669165001FE410 /* sentmintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77913829669165001FE410 /* sentmintTests.swift */; };
 		5C77914329669165001FE410 /* sentmintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77914229669165001FE410 /* sentmintUITests.swift */; };
 		5C77914529669165001FE410 /* sentmintUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77914429669165001FE410 /* sentmintUITestsLaunchTests.swift */; };
+		5C779152296AE5D7001FE410 /* resultSentimint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C779151296AE5D7001FE410 /* resultSentimint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C09261D296D9D390047D75A /* logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logo.swift; sourceTree = "<group>"; };
+		5C092622296F2ABB0047D75A /* sentimentscor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentimentscor.swift; sourceTree = "<group>"; };
 		5C77912429669164001FE410 /* sentmint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sentmint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77912729669164001FE410 /* sentmintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintApp.swift; sourceTree = "<group>"; };
 		5C77912929669164001FE410 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,9 @@
 		5C77913E29669165001FE410 /* sentmintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sentmintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77914229669165001FE410 /* sentmintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintUITests.swift; sourceTree = "<group>"; };
 		5C77914429669165001FE410 /* sentmintUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C779151296AE5D7001FE410 /* resultSentimint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultSentimint.swift; sourceTree = "<group>"; };
+		5C779156296C3130001FE410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5C779158296C3131001FE410 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 		5C77911B29669164001FE410 = {
 			isa = PBXGroup;
 			children = (
+				5C09261D296D9D390047D75A /* logo.swift */,
 				5C77912629669164001FE410 /* sentmint */,
 				5C77913729669165001FE410 /* sentmintTests */,
 				5C77914129669165001FE410 /* sentmintUITests */,
@@ -96,8 +106,11 @@
 			children = (
 				5C77912729669164001FE410 /* sentmintApp.swift */,
 				5C77912929669164001FE410 /* ContentView.swift */,
+				5C092622296F2ABB0047D75A /* sentimentscor.swift */,
 				5C77912B29669165001FE410 /* Assets.xcassets */,
 				5C77912D29669165001FE410 /* Preview Content */,
+				5C779151296AE5D7001FE410 /* resultSentimint.swift */,
+				5C779157296C3130001FE410 /* Localizable.strings */,
 			);
 			path = sentmint;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 5C77911B29669164001FE410;
 			productRefGroup = 5C77912529669164001FE410 /* Products */;
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C77912F29669165001FE410 /* Preview Assets.xcassets in Resources */,
+				5C092621296EFD290047D75A /* Localizable.strings in Resources */,
 				5C77912C29669165001FE410 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C779152296AE5D7001FE410 /* resultSentimint.swift in Sources */,
 				5C77912A29669164001FE410 /* ContentView.swift in Sources */,
+				5C09261E296D9D390047D75A /* logo.swift in Sources */,
 				5C77912829669164001FE410 /* sentmintApp.swift in Sources */,
+				5C092623296F2ABB0047D75A /* sentimentscor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +311,18 @@
 			targetProxy = 5C77913F29669165001FE410 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C779157296C3130001FE410 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C779156296C3130001FE410 /* ar */,
+				5C779158296C3131001FE410 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5C77914629669165001FE410 /* Debug */ = {
@@ -425,6 +455,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

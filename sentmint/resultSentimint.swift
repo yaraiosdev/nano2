@@ -12,7 +12,7 @@ class resultforsentmint :ObservableObject {
     
     
     func happy () -> Result{
-        let happyArray: [Result] = [.init(title: NSLocalizedString("That’s amazing! ", comment: ""),  description :"Here’s a little reward for you♡" , image: "h1" , qutoe: "remember doing the little things make us the happiest." ),
+        let happyArray: [Result] = [.init(title: "That’s amazing",  description :"Here’s a little reward for you♡" , image: "h1" , qutoe: "remember doing the little things make us the happiest." ),
                                     .init(title: "Fantastic! ", description :"You deserve happy things♡", image: "h2"  , qutoe: "Happiness is a mood, positivity is a mindset." ),]
        
         let randomElement = happyArray.randomElement()!
@@ -23,7 +23,7 @@ class resultforsentmint :ObservableObject {
     
     func sadd () -> Result{
         let sadArray: [Result] = [.init(title: "Take a deep breath! ", description :"Here’s a reminder for you♡", image: "s1" , qutoe: " Falling down is part of life, getting back uo is living." ),
-                                  .init(title: "You are strong! ", description :"Listen to this relaxing music♡", image: "image sad" , qutoe: "You will be okay, It just takes some time to heal." ),]
+                                  .init(title: "You are strong! ", description :"Listen to this relaxing music♡", image: "s1" , qutoe: "You will be okay, It just takes some time to heal." ),]
        
         let randomElement = sadArray.randomElement()!
         return randomElement
@@ -31,7 +31,7 @@ class resultforsentmint :ObservableObject {
     
     func worried () -> Result{
         let worriedArray: [Result] = [.init(title: "Let it go! ", description :"Don’t listen to the negative voice inside your mind♡", image: "w1",  qutoe: "If it comes,let it if it goes, let it" ),
-                                  .init(title: "You’ll be fine don’t worry!", description :"Listen to this relaxing music♡", image: "image worried" , qutoe: "Set peace of mind as your highest goal, and organize your life around it." ),]
+                                  .init(title: "You’ll be fine don’t worry!", description :"Listen to this relaxing music♡", image: "w" , qutoe: "Set peace of mind as your highest goal, and organize your life around it." ),]
        
         let randomElement = worriedArray.randomElement()!
         return randomElement

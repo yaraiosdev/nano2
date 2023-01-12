@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5C09261E296D9D390047D75A /* logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09261D296D9D390047D75A /* logo.swift */; };
 		5C092621296EFD290047D75A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C779157296C3130001FE410 /* Localizable.strings */; };
-		5C092623296F2ABB0047D75A /* sentimentscor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C092622296F2ABB0047D75A /* sentimentscor.swift */; };
 		5C77912829669164001FE410 /* sentmintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912729669164001FE410 /* sentmintApp.swift */; };
 		5C77912A29669164001FE410 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912929669164001FE410 /* ContentView.swift */; };
 		5C77912C29669165001FE410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C77912B29669165001FE410 /* Assets.xcassets */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		5C09261D296D9D390047D75A /* logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logo.swift; sourceTree = "<group>"; };
-		5C092622296F2ABB0047D75A /* sentimentscor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentimentscor.swift; sourceTree = "<group>"; };
 		5C77912429669164001FE410 /* sentmint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sentmint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77912729669164001FE410 /* sentmintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintApp.swift; sourceTree = "<group>"; };
 		5C77912929669164001FE410 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			children = (
 				5C77912729669164001FE410 /* sentmintApp.swift */,
 				5C77912929669164001FE410 /* ContentView.swift */,
-				5C092622296F2ABB0047D75A /* sentimentscor.swift */,
 				5C77912B29669165001FE410 /* Assets.xcassets */,
 				5C77912D29669165001FE410 /* Preview Content */,
 				5C779151296AE5D7001FE410 /* resultSentimint.swift */,
@@ -276,7 +273,6 @@
 				5C77912A29669164001FE410 /* ContentView.swift in Sources */,
 				5C09261E296D9D390047D75A /* logo.swift in Sources */,
 				5C77912829669164001FE410 /* sentmintApp.swift in Sources */,
-				5C092623296F2ABB0047D75A /* sentimentscor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,12 @@
 import SwiftUI
 import NaturalLanguage
 
+
+
+
+
+
+
 let backgroundGradient = LinearGradient(
     colors: [Color("color1"), Color("color3") ,Color("color1")],
 
@@ -16,12 +22,23 @@ let backgroundGradient = LinearGradient(
 
 
 struct DevTechieNLTaggerLemmaExample: View {
+    
+    init() {
+      let navBarAppearance = UINavigationBar.appearance()
+      navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(named: "color2")]
+      
+    }
+    
+    
+    
+    
     @State var shouldPresentSheet = false
     @State private var inputString = ""
   
     @StateObject private var x = resultforsentmint()
+    
     @State var result2 : Result = Result(title:  "That’s great!", description :" Be gratful for what you have♡", image: "n1" , qutoe: "Remember focus on the good things." )
-////
+//////
   
     let tagger = NLTagger(tagSchemes: [.language, .script, .tokenType,.sentimentScore])
     
@@ -65,26 +82,25 @@ struct DevTechieNLTaggerLemmaExample: View {
                             .frame(width: 80, height: 40)
                             .cornerRadius(8)
                         Button(action: {
-                            tagger.string = inputString
-                            let (sentiment, _) = tagger.tag(at: inputString.startIndex, unit: .paragraph, scheme: .sentimentScore)
+          
+                          tagger.string = inputString
+                                                let (sentiment, _) = tagger.tag(at: inputString.startIndex, unit: .paragraph, scheme: .sentimentScore)
                             
                             
-                            
-                            
-                            
-                            if let sentimentScore = Double(sentiment?.rawValue ?? "0") {
+                            result2 = x.normal()
+            if let sentimentScore = Double(sentiment?.rawValue ?? "0") {
                                 print(sentimentScore)
-                                result2=x.normal()
-                                if sentimentScore > 0.5 {
+                        
+                                if sentimentScore > 0.7 {
                                     result2 = x.happy()
-                                } else if sentimentScore >= 0{
-                                    result2=x.normal()
-                                } else if sentimentScore < -0.5 {
+                                } else if sentimentScore >= 0.0 {
+                                    result2 = x.normal()
+                                } else if sentimentScore > -0.7 {
                                     result2 = x.sadd()
                                 } else {
                                     result2 = x.worried()
                                 }
-                            }
+                          }
                             
                             shouldPresentSheet = true
                             
@@ -97,9 +113,9 @@ struct DevTechieNLTaggerLemmaExample: View {
                                 .sheet(isPresented: $shouldPresentSheet) {
                                     VStack{
                                         
-                                        
-                                        ResultView(result:result2)
-                                        
+                                   
+                                            ResultView(result:result2)
+                                    
                                         
                                     }
                                     
@@ -111,7 +127,8 @@ struct DevTechieNLTaggerLemmaExample: View {
                     }
             }
             .padding()
-            .navigationTitle("Tameny").foregroundColor(Color("color2"))
+            .navigationTitle("Tameny")
+            
             
             
         }

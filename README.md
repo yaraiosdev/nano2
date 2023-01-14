@@ -46,7 +46,7 @@ An App that provides an easy way to express feelings and understand it by identi
 
 
 
-Devolopers:
+Developers:
 
 Maha almalik 
 

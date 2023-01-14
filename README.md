@@ -30,7 +30,7 @@ An application for people who have no one to talk to and express their feelings,
 
 ## Demo of the app:
 
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/SXLogyUa5UU)
 
 
 

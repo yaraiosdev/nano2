@@ -2,7 +2,7 @@
 
 # Tameny | طمني
 ![Untitled-Artwork](https://user-images.githubusercontent.com/105722836/212483038-54b0b452-bb20-4c0b-8a47-25b8eadef97b.png)
-Tameny
+
 
 # Big Idea
 

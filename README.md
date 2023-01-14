@@ -24,6 +24,7 @@ An application for people who have no one to talk to and express their feelings,
 - SwiftUI
 - natural language processing (NLP) - sentiment analysis
 - AVFoundation
+- Localization
 
 
 

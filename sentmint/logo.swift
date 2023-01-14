@@ -17,7 +17,7 @@ import SwiftUI
  @State private var opacity = 0.5
  var body: some View {
  if isActive{
-     DevTechieNLTaggerLemmaExample()
+     onbording()
  }
  else{
  VStack{

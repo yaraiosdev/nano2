@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C09261E296D9D390047D75A /* logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09261D296D9D390047D75A /* logo.swift */; };
 		5C092621296EFD290047D75A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C779157296C3130001FE410 /* Localizable.strings */; };
+		5C09265E2972A47F0047D75A /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5C09265D2972A47F0047D75A /* music.mp3 */; };
 		5C77912829669164001FE410 /* sentmintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912729669164001FE410 /* sentmintApp.swift */; };
 		5C77912A29669164001FE410 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77912929669164001FE410 /* ContentView.swift */; };
 		5C77912C29669165001FE410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C77912B29669165001FE410 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		5C77914329669165001FE410 /* sentmintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77914229669165001FE410 /* sentmintUITests.swift */; };
 		5C77914529669165001FE410 /* sentmintUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77914429669165001FE410 /* sentmintUITestsLaunchTests.swift */; };
 		5C779152296AE5D7001FE410 /* resultSentimint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C779151296AE5D7001FE410 /* resultSentimint.swift */; };
+		5CF6C1F62972D181001B0A70 /* onbording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6C1F52972D181001B0A70 /* onbording.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5C09261D296D9D390047D75A /* logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logo.swift; sourceTree = "<group>"; };
+		5C09265D2972A47F0047D75A /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		5C77912429669164001FE410 /* sentmint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sentmint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C77912729669164001FE410 /* sentmintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentmintApp.swift; sourceTree = "<group>"; };
 		5C77912929669164001FE410 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		5C779151296AE5D7001FE410 /* resultSentimint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultSentimint.swift; sourceTree = "<group>"; };
 		5C779156296C3130001FE410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5C779158296C3131001FE410 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5CF6C1F52972D181001B0A70 /* onbording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onbording.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C09265C2972A3FC0047D75A /* aduio */ = {
+			isa = PBXGroup;
+			children = (
+				5C09265D2972A47F0047D75A /* music.mp3 */,
+			);
+			path = aduio;
+			sourceTree = "<group>";
+		};
 		5C77911B29669164001FE410 = {
 			isa = PBXGroup;
 			children = (
-				5C09261D296D9D390047D75A /* logo.swift */,
 				5C77912629669164001FE410 /* sentmint */,
 				5C77913729669165001FE410 /* sentmintTests */,
 				5C77914129669165001FE410 /* sentmintUITests */,
@@ -102,8 +113,11 @@
 		5C77912629669164001FE410 /* sentmint */ = {
 			isa = PBXGroup;
 			children = (
+				5C09265C2972A3FC0047D75A /* aduio */,
+				5C09261D296D9D390047D75A /* logo.swift */,
 				5C77912729669164001FE410 /* sentmintApp.swift */,
 				5C77912929669164001FE410 /* ContentView.swift */,
+				5CF6C1F52972D181001B0A70 /* onbording.swift */,
 				5C77912B29669165001FE410 /* Assets.xcassets */,
 				5C77912D29669165001FE410 /* Preview Content */,
 				5C779151296AE5D7001FE410 /* resultSentimint.swift */,
@@ -242,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C09265E2972A47F0047D75A /* music.mp3 in Resources */,
 				5C77912F29669165001FE410 /* Preview Assets.xcassets in Resources */,
 				5C092621296EFD290047D75A /* Localizable.strings in Resources */,
 				5C77912C29669165001FE410 /* Assets.xcassets in Resources */,
@@ -272,6 +287,7 @@
 				5C779152296AE5D7001FE410 /* resultSentimint.swift in Sources */,
 				5C77912A29669164001FE410 /* ContentView.swift in Sources */,
 				5C09261E296D9D390047D75A /* logo.swift in Sources */,
+				5CF6C1F62972D181001B0A70 /* onbording.swift in Sources */,
 				5C77912829669164001FE410 /* sentmintApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,12 +7,19 @@
 
 import SwiftUI
 import NaturalLanguage
+import AVFoundation
+
+var player : AVAudioPlayer!
 
 
 
-
-
-
+extension View {
+    func dismissKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder
+            .resignFirstResponder), to: nil, from: nil, for: nil)
+        
+        
+    }}
 
 let backgroundGradient = LinearGradient(
     colors: [Color("color1"), Color("color3") ,Color("color1")],
@@ -25,7 +32,7 @@ struct DevTechieNLTaggerLemmaExample: View {
     
     init() {
       let navBarAppearance = UINavigationBar.appearance()
-      navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(named: "color2")]
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(named: "color2") as Any]
       
     }
     
@@ -37,17 +44,12 @@ struct DevTechieNLTaggerLemmaExample: View {
   
     @StateObject private var x = resultforsentmint()
     
-    @State var result2 : Result = Result(title:  "That’s great!", description :" Be gratful for what you have♡", image: "n1" , qutoe: "Remember focus on the good things." )
-//////
+    @State var result2 : Result = Result(idview: 0, title:  "great!", description :" Be gratful for what you have♡", image: "n1" , qutoe: "Remember focus on the good things." )
+
   
     let tagger = NLTagger(tagSchemes: [.language, .script, .tokenType,.sentimentScore])
     
-//    let input =" "
-//
-//    let rangeLimit = NSRange(location: 0, length: input.count)
-//    let range = Range(rangeLimit, in: input)
-//    tagger.setLanguage(.arabic, range: range)
-//
+
     var body: some View {
         
      
@@ -82,28 +84,29 @@ struct DevTechieNLTaggerLemmaExample: View {
                             .frame(width: 80, height: 40)
                             .cornerRadius(8)
                         Button(action: {
-          
-                          tagger.string = inputString
-                                                let (sentiment, _) = tagger.tag(at: inputString.startIndex, unit: .paragraph, scheme: .sentimentScore)
-                            
-                            
-                            result2 = x.normal()
-            if let sentimentScore = Double(sentiment?.rawValue ?? "0") {
-                                print(sentimentScore)
-                        
-                                if sentimentScore > 0.7 {
-                                    result2 = x.happy()
-                                } else if sentimentScore >= 0.0 {
-                                    result2 = x.normal()
-                                } else if sentimentScore > -0.7 {
-                                    result2 = x.sadd()
-                                } else {
-                                    result2 = x.worried()
+                            if !inputString.isEmpty{
+                                tagger.string = inputString
+                                let (sentiment, _) = tagger.tag(at: inputString.startIndex, unit: .paragraph, scheme: .sentimentScore)
+                                
+                                
+                                result2 = x.normal()
+                                
+                                if let sentimentScore = Double(sentiment?.rawValue ?? "0") {
+                                    print(sentimentScore)
+                                    
+                                    if sentimentScore > 0.7 {
+                                        result2 = x.happy()
+                                    } else if sentimentScore >= 0.0 {
+                                        result2 = x.normal()
+                                    } else if sentimentScore > -0.7 {
+                                        result2 = x.sadd()
+                                    } else {
+                                        result2 = x.worried()
+                                    }
                                 }
-                          }
-                            
-                            shouldPresentSheet = true
-                            
+                                
+                                shouldPresentSheet = true
+                            }
                             
                         }, label: {
                             Image(systemName: "arrow.up.heart.fill")
@@ -120,6 +123,7 @@ struct DevTechieNLTaggerLemmaExample: View {
                                     }
                                     
                                     .presentationDetents([.large, .medium, .fraction (0.75)])
+                                    .background(Color("color2"))
                                 }
                             
                         })
@@ -133,6 +137,8 @@ struct DevTechieNLTaggerLemmaExample: View {
             
         }
             .ignoresSafeArea()
+        }.onTapGesture {
+            self.dismissKeyboard()
         }
     }
 }
@@ -145,14 +151,19 @@ struct DevTechieNLTaggerLemmaExample_Previews: PreviewProvider {
 
 
 struct Result{
+    let idview : Int
     let title: String
     let description:String
     let image: String
     let qutoe:String
+    
 }
 
 struct ResultView: View{
+    
     let result: Result
+   // @State var shouldPresentSheet = false
+    @Environment(\.presentationMode) var presentationMode
     var body: some View{
         ZStack{
             Color("color2")
@@ -163,15 +174,52 @@ struct ResultView: View{
             Text(result.description).foregroundColor(.white)
                 .font(.custom("HelveticaNeue", size: 20))
              
-            
-            Image(result.image).resizable().frame(width: 250 , height: 250)
-            
-            Text(result.qutoe).foregroundColor(.white) .font(.custom("HelveticaNeue", size: 18))
+            if (result.idview == 1) {
+                Button(action: {
+                    
+                    
+                    playSound(key: result.image)
+                    
+                    
+                },label:{
+                    
+                    Image("img1").resizable().frame(width: 250 , height: 250)
+                    //.font(.custom("HelveticaNeue", size: 33))
+                        . foregroundColor (Color.green)
+                        .font(.system (size: 32))
+                })
+                
+                Text(result.qutoe).foregroundColor(.white) .font(.custom("HelveticaNeue", size: 18))
+            }
+            else {Image(result.image).resizable().frame(width: 250 , height: 250)
+                
+                Text(result.qutoe).foregroundColor(.white) .font(.custom("HelveticaNeue", size: 18))}
             
         }.padding()
         .ignoresSafeArea()
     }
     }
+    
+    //
+    func playSound(key :String) {
+        
+        let url = Bundle.main.url(forResource: key, withExtension: "mp3")
+        guard url != nil else {
+            return
+        }
+        
+        do {
+            player = try AVAudioPlayer (contentsOf: url!)
+            player?.play ()
+        } catch {
+            print("error")
+        }
+        
+        
+    }
+    
+    
+    //
 }
 
 

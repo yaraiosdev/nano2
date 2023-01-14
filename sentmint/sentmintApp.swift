@@ -11,6 +11,8 @@ import SwiftUI
 struct sentmintApp: App {
     var body: some Scene {
         WindowGroup {
-            DevTechieNLTaggerLemmaExample()        }
+           //DevTechieNLTaggerLemmaExample()
+            logo()
+        }
     }
 }

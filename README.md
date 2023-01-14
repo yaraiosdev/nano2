@@ -21,9 +21,9 @@ An application for people who have no one to talk to and express their feelings,
 
 Technologies & Tools:
 
-SwiftUI
-
-
+- SwiftUI
+- natural language processing (NLP) - sentiment analysis
+- AVFoundation
 
 
 

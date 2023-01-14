@@ -3,23 +3,23 @@ nano2
 ![Untitled-Artwork](https://user-images.githubusercontent.com/105722836/212483038-54b0b452-bb20-4c0b-8a47-25b8eadef97b.png)
 Tameny
 
-Big Idea
+# Big Idea
 
-# Challenge Statment:
+## Challenge Statment:
 
 having an easy way to expess your feelings and feeling reassurance.
 
 
 
 
-# Solution Concept:
+## Solution Concept:
 
 An application for people who have no one to talk to and express their feelings, it will help them feel reassured.
 
 
 
 
-# Technologies & Tools:
+## Technologies & Tools:
 
 - SwiftUI
 - natural language processing (NLP) - sentiment analysis
@@ -27,7 +27,7 @@ An application for people who have no one to talk to and express their feelings,
 
 
 
-# Demo of the app:
+## Demo of the app:
 
 //video 
 
@@ -35,7 +35,7 @@ An application for people who have no one to talk to and express their feelings,
 
 
 
-# Challenge Summary:
+## Challenge Summary:
 
 An App that provides an easy way to express feelings and understand it by identifying and categorizing them, then a speical message will appear which will include helpful advices, relaxing sounds and positive reminders.
 

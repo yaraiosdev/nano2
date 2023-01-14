@@ -11,7 +11,7 @@ struct OnBardingStep {
 }
 
 private let onBoardingSteps = [
-    OnBardingStep(image:"p1", title: " ", description: " Welcome"),
+    OnBardingStep(image:"p1", title: "Welcome", description: " "),
     OnBardingStep(image:"p2",  title: "1- Type what your feeling in white box.", description: ""),
     OnBardingStep(image:"p3", title: " 2- you will get a message ", description: "After typing and clicking the button .")
 
@@ -54,19 +54,19 @@ struct onbording: View {
                             
                             Image(onBoardingSteps[it].image)
                                 .resizable()
-                                .frame(width: 300)
+                                .frame(width: 280)
                             
                             
                             Text(onBoardingSteps[it].title)
                                 .font(.title)
                             .multilineTextAlignment(.center)
-                                .bold()
+                               
                                 .foregroundColor(Color("color2"))
-                            
+                                .padding(.top, 30)
                             Text(onBoardingSteps[it].description)
                                 .multilineTextAlignment(.center)
                                .padding(.horizontal, 32)
-                            .padding(.top, 8)
+                           // .padding(.top, 8)
                             .foregroundColor(Color("color2"))
                             
                         }

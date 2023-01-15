@@ -30,13 +30,13 @@ An application for people who have no one to talk to and express their feelings,
 
 ## Demo of the app:
 
-[![IMAGE ALT TEXT HERE]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg](https://ibb.co/bz1pqDz))](https://www.youtube.com/watch?v=[YOUTUBE_VIDEO_ID_HERE](https://youtube.com/shorts/SXLogyUa5UU?feature=share))
+
 
 
 <img width="477" alt="Screenshot 1444-06-22 at 1 03 44 PM" src="https://user-images.githubusercontent.com/116810243/212534678-85762db1-9789-4273-9f00-b9eb30f60869.png">
 
 
-
+https://www.youtube.com/shorts/SXLogyUa5UU
 
 
 
